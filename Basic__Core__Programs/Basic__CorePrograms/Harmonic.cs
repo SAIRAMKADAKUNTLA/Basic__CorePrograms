@@ -8,14 +8,16 @@ namespace BasicCorePrograms
     {
         public void Check()
         {
-            Console.WriteLine("Enter the Value");
-            int Value = Convert.ToInt32(Console.ReadLine());
-            int Temp = 1;
-            for (int i = 1; i <= Value; i++)
+            float sum = 0;
+            Console.WriteLine("Enter a positive integer : ");
+            int N = Convert.ToInt32(Console.ReadLine());
+
+            for (float i = 1; i <= N; i++)
             {
-                Temp = Temp + 1 / i;
-                Console.WriteLine("Result is:" + Temp);
+                sum = sum + (1 / i);
             }
+            Console.WriteLine(sum);
+        }
         }
             }
-}
+
